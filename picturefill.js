@@ -54,6 +54,8 @@
 					picImg = w.document.createElement( "img" );
 					picImg.alt = ps[ i ].getAttribute( "alt" );
 					ps[ i ].appendChild( picImg );
+					picImg.className = ps[ i ].className
+					ps[ i ].className = ""
 				}
 				
 				picImg.src =  matches.pop().getAttribute( "src" );
